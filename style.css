@@ -1,0 +1,188 @@
+:root {
+    font-size: 10px;
+    --light: #FFFFFF;
+    --primary: #2488BE;
+    --secondary: #002A37;
+    --danger: #CD3D3D;
+    --success: #31AE54;
+    --title-g: 3.2rem;
+    --title-m: 2.6rem;
+    --text-normal: 1.8rem;
+    --bg-gradient: linear-gradient(45deg, #4184AA, #234A61);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--bg-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: clamp(300px, 90%, 768px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+main .head {
+    min-height: 11rem;
+    padding: 2rem 3rem;
+    background-color: var(--secondary);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .head #pin {
+    margin-right: 10px;
+    display: none;
+}
+
+main .head #logo {
+    width: 9rem;
+    position: absolute;
+    right: 30px;
+    display: none;
+}
+
+main .head #title {
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--title-g);
+    width: 80%;
+}
+
+main .head.question {
+    justify-content: start;
+}
+
+main .head.question #title {
+    font-weight: 500;
+    text-align: left;
+    font-size: var(--title-m);
+}
+
+main .head.question #pin {
+    margin-right: 10px;
+    display: inline;
+}
+
+main .head.question #logo {
+    width: 9rem;
+    display: inline;
+}
+
+main .content {
+    padding: 70px;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .content img {
+    width: clamp(20px, 20%, 140px);
+    margin-bottom: 20px;
+    display: none;
+}
+
+main .content .btn-init,
+main .content .btn-end {
+    padding: 13px 40px;
+    font-size: var(--title-g);
+    border-radius: 20px;
+    background-color: var(--light);
+    border: 3px solid var(--secondary);
+    color: var(--secondary);
+    cursor: pointer;
+    transition: all 0.1s;
+    text-transform: uppercase;
+    display: none;
+}
+
+main .content .btn-init:hover,
+main .content .btn-end:hover {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+main .content #options {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 60px;
+    display: none;
+}
+
+main .content.progress #options {
+    display: grid;
+}
+
+main .content .btn-option {
+    padding: 15px 30px;
+    font-size: var(--title-m);
+    border-radius: 20px;
+    background-color: var(--light);
+    border: 3px solid var(--secondary);
+    color: var(--secondary);
+    cursor: pointer;
+    transition: all 0.1s;
+    text-transform: uppercase;
+}
+
+main .content .btn-option:hover {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+main .content .btn-option.fail {
+    background-color: var(--danger);
+    color: var(--light);
+    border: 3px solid var(--danger);
+}
+
+main .content .btn-option.correct {
+    background-color: var(--success);
+    color: var(--light);
+    border: 3px solid var(--success);
+}
+
+main .content .result {
+    font-weight: bold;
+    font-size: var(--title-g);
+    color: var(--secondary);
+    display: none;
+    margin-bottom: 30px;
+}
+
+main .content.init img,
+main .content.init .btn-init,
+main .content.end .result,
+main .content.end .btn-end {
+    display: inline;
+}
+
+main .foot {
+    height: 6rem;
+    background-color: var(--secondary);
+    color: var(--light);
+    font-size: var(--text-normal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+}

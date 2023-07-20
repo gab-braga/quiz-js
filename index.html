@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="head">
+            <img src="imagens/pin.svg" id="pin">
+            <span id="title">Quiz - Desenvolvimento Web</span>
+            <img src="imagens/logo.svg" id="logo">
+        </div>
+        <div class="content init">
+            <!-- VISUALIZAÇÃO INICIAL -->
+            <img src="imagens/logo.svg" alt="Interrogação">
+            <button class="btn-init">
+                Iniciar
+            </button>
+            <!-- VISUALIZAÇÃO DAS QUESTÕES -->
+            <div id="options">
+                <button class="btn-option"></button>
+                <button class="btn-option"></button>
+                <button class="btn-option"></button>
+                <button class="btn-option"></button>
+            </div>
+            <!-- VISUALIZAÇÃO FINAL -->
+            <span class="result">Parabéns! Você acertou <b id="score">0</b> de <b id="total">0</b> questões.</span>
+            <button class="btn-end">
+                Recomeçar
+            </button>
+        </div>
+        <div class="foot">
+            <span id="steps"></span>
+        </div>
+    </main>
+
+    <script type="module" src="UiManager.js"></script>
+</body>
+</html>
