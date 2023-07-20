@@ -50,8 +50,8 @@ export const questions = [
         correctIndex: 0,
     },
     {
-        title: "Em JavaScript, qual declaração é usada para criar uma variável?",
-        options: ["let", "var", "const", "variable"],
+        title: "Em JavaScript, qual declaração é usada para criar uma constante?",
+        options: ["let", "var", "const", "constant"],
         correctIndex: 2,
     },
     {

@@ -33,7 +33,7 @@ main {
     flex-direction: column;
     align-items: stretch;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 20rem;
 }
 
 main .head {
@@ -55,7 +55,7 @@ main .head #pin {
 main .head #logo {
     width: 9rem;
     position: absolute;
-    right: 30px;
+    right: 30rem;
     display: none;
 }
 
@@ -77,7 +77,7 @@ main .head.question #title {
 }
 
 main .head.question #pin {
-    margin-right: 10px;
+    margin-right: 10rem;
     display: inline;
 }
 
@@ -87,7 +87,7 @@ main .head.question #logo {
 }
 
 main .content {
-    padding: 70px;
+    padding: 70rem;
     background-color: var(--light);
     display: flex;
     justify-content: center;
@@ -96,14 +96,14 @@ main .content {
 }
 
 main .content img {
-    width: clamp(20px, 20%, 140px);
-    margin-bottom: 20px;
+    width: 14rem;
+    margin-bottom: 20rem;
     display: none;
 }
 
 main .content .btn-init,
 main .content .btn-end {
-    padding: 13px 40px;
+    padding: 13rem 40rem;
     font-size: var(--title-g);
     border-radius: 20px;
     background-color: var(--light);
@@ -124,7 +124,7 @@ main .content .btn-end:hover {
 main .content #options {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 40px 60px;
+    gap: 40rem 60rem;
     display: none;
 }
 
@@ -133,9 +133,9 @@ main .content.progress #options {
 }
 
 main .content .btn-option {
-    padding: 15px 30px;
+    padding: 15rem 30rem;
     font-size: var(--title-m);
-    border-radius: 20px;
+    border-radius: 20rem;
     background-color: var(--light);
     border: 3px solid var(--secondary);
     color: var(--secondary);
@@ -185,4 +185,21 @@ main .foot {
     justify-content: center;
     align-items: center;
     font-weight: normal;
+}
+
+@media screen and (max-width: 670px) {
+    main .content #options {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    main .head #logo {
+        display: none !important;
+    }
+
+    main .head #title {
+        width: 100%;
+    }
 }
