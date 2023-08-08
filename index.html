@@ -8,8 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/toggle-theme.css">
 </head>
 <body>
+    <div class="toggle-theme-container">
+        <input type="checkbox" id="toggle-theme">
+        <label for="toggle-theme"></label>
+    </div>
     <main>
         <div class="head">
             <span class="pin"></span>
@@ -40,6 +45,7 @@
         </div>
     </main>
 
-    <script type="module" src="script/UiManager.js"></script>
+    <script defer type="module" src="script/UiManager.js"></script>
+    <script defer src="script/DarkTheme.js"></script>
 </body>
 </html>
