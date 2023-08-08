@@ -26,7 +26,7 @@
     width: 2.7rem;
     height: 2.7rem;
     border-radius: 1.5rem;
-    background: url("/assets/sun.svg");
+    background: url("../assets/sun.svg");
     position: absolute;
     top: 0.4rem;
     left: 0.4rem;
@@ -41,6 +41,6 @@
 }
 
 #toggle-theme:checked + label:before {
-    background: url("/assets/mon.svg");
+    background: url("../assets/mon.svg");
     left: 3.9rem;
 }

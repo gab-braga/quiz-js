@@ -54,7 +54,7 @@ main .head .pin {
     width: 1.1rem;
     height: 1.1rem;
     margin-right: 1rem;
-    background-image: url("/assets/pin.svg");
+    background-image: url("../assets/pin.svg");
     background-size: contain;
     display: none;
 }
