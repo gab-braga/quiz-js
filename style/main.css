@@ -1,7 +1,7 @@
 :root {
     font-size: 10px;
     --light: #FFFFFF;
-    --primary: #2488BE;
+    --primary: #149ECA;
     --secondary: #002A37;
     --danger: #CD3D3D;
     --success: #31AE54;
@@ -47,8 +47,13 @@ main .head {
     position: relative;
 }
 
-main .head #pin {
+main .head .pin {
+    display: inline-block;
+    width: 1.1rem;
+    height: 1.1rem;
     margin-right: 1rem;
+    background-image: url("/assets/pin.svg");
+    background-size: contain;
     display: none;
 }
 
@@ -76,7 +81,7 @@ main .head.question #title {
     font-size: var(--title-m);
 }
 
-main .head.question #pin,
+main .head.question .pin,
 main .head.question #logo {
     display: inline;
 }
@@ -145,15 +150,15 @@ main .content .btn-option:hover {
 }
 
 main .content .btn-option.fail {
-    background-color: var(--danger);
-    color: var(--light);
-    border: 3px solid var(--danger);
+    background-color: var(--danger) !important;
+    color: var(--light) !important;
+    border: 3px solid var(--danger) !important;
 }
 
 main .content .btn-option.correct {
-    background-color: var(--success);
-    color: var(--light);
-    border: 3px solid var(--success);
+    background-color: var(--success) !important;
+    color: var(--light) !important;
+    border: 3px solid var(--success) !important;
 }
 
 main .content .result {
