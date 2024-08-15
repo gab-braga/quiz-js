@@ -1,10 +1,10 @@
 # Quiz
-![Logo](https://raw.githubusercontent.com/F-Gabriel-Braga/quiz-js/d0750a8b61f0acaee97767aa3029f5192ec4b2e2/imagens/logo.svg)
+![Logo](https://raw.githubusercontent.com/gab-braga/quiz-js/d0750a8b61f0acaee97767aa3029f5192ec4b2e2/imagens/logo.svg)
 
 Bem-vindo(a) ao Quiz sobre Web! Este é um projeto que desafia o público a testar seus conhecimentos sobre desenvolvimento web através de uma lista de questões envolvendo HTML, CSS e JavaScript.
 
 # Link
-[https://f-gabriel-braga.github.io/quiz-js](https://f-gabriel-braga.github.io/quiz-js)
+[https://gab-braga.github.io/quiz-js](https://gab-braga.github.io/quiz-js)
 
 ## Como funciona o Quiz
 O Quiz é uma aplicação web interativa que apresenta uma série de perguntas relacionadas ao desenvolvimento web.
@@ -17,7 +17,7 @@ O usuário terá que escolher a resposta correta entre as opções fornecidas. C
 
 ## Como utilizar o Quiz
 1. Clone o repositório: Comece clonando este repositório para o seu ambiente local utilizando o seguinte comando:
-`git clone https://github.com/F-Gabriel-Braga/quiz-js.git`
+`git clone https://github.com/gab-braga/quiz-js.git`
 2. Acesse a pasta: Navegue para a pasta do projeto:
 `cd quiz-js`
 3. Abra o arquivo: Abra o arquivo index.html no seu navegador.
